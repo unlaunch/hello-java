@@ -7,9 +7,9 @@ For more details you can visit Unlaunch documentation https://docs.unlaunch.io/d
 
 1. Download code. Edit Hello.java class set your unluanch SDK_KEY and FEATURE_FLAG_KEY that you want to evaluate as 
 	
-	  static final String SDK_KEY = "1234567890abcdef";
+	  static final String SDK_KEY = "your-sdk-key";
 
-  	static final String FEATURE_FLAG_KEY = "my-flag";
+  	static final String FEATURE_FLAG_KEY = "your-flag-key";
 
 On command line run as:
 	
