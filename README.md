@@ -18,13 +18,13 @@ private static finalString FEATURE_FLAG_KEY = "your-flag-key";
 
 By default, we have set these values to an example feature flag. So you can run the code as is.
 
-
-On command line run as:
+Then on on the command line, type:
 
 ```
 mvn clean compile assembly:single
 java -jar target/hello-java-1.0-SNAPSHOT.jar 
 ```
+
 When you run the project, it will print something like:
 
 ```

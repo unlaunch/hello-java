@@ -3,7 +3,6 @@ package io.unlaunch.sdk;
 import io.unlaunch.UnlaunchClient;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-
 import io.unlaunch.UnlaunchFeature;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,7 +23,7 @@ public class Hello {
     public static void main(String[] args) {
         if (SDK_KEY == null || SDK_KEY.isEmpty()) {
             LOG.error("[DEMO] You must edit Hello.java to set SDK_KEY to Unlaunch SDK key. \n" +
-                    "Please visit https://docs.unlaunch.io/docs/sdks/sdk-keys for more information.");
+                      "Please visit https://docs.unlaunch.io/docs/sdks/sdk-keys for more information.");
             System.exit(1);
         }
 
@@ -58,7 +57,6 @@ public class Hello {
         UnlaunchFeature feature = client.getFeature(FEATURE_FLAG_KEY, "user-id-123");
         LOG.info("[DEMO] Feature returned variation: {}. Evaluation reason: {}",
                 feature.getVariation(), feature.getEvaluationReason());
-
         // shutdown the client to flush any events or metrics 
         client.shutdown();
     }
