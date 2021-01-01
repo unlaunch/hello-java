@@ -12,9 +12,12 @@ For more details, read our [Getting Started](https://docs.unlaunch.io/docs/getti
 1. Download code. Edit Hello.java class set your Unlaunch SDK_KEY and FEATURE_FLAG_KEY you want to evaluate as: 
 
 ```
-static final String SDK_KEY = "your-sdk-key";
-static final String FEATURE_FLAG_KEY = "your-flag-key";
+private static final String SDK_KEY = "your-sdk-key";
+private static finalString FEATURE_FLAG_KEY = "your-flag-key";
 ```
+
+By default, we have set these values to an example feature flag. So you can run the code as is.
+
 
 On command line run as:
 
@@ -22,5 +25,8 @@ On command line run as:
 mvn clean compile assembly:single
 java -jar target/hello-java-1.0-SNAPSHOT.jar 
 ```
+When you run the project, it will print something like:
 
-The Hello example will print: **Variation served is {variation}** with the evaluated variation.
+```
+[DEMO] Feature returned variation: on. Evaluation reason: Default Rule served.
+```
