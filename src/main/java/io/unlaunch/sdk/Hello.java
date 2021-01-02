@@ -11,7 +11,6 @@ import org.apache.logging.log4j.Logger;
  * This is a demo app to describe how to use Unlaunch Java SDK.
  */
 public class Hello {
-
     private static final Logger LOG = LogManager.getLogger(Hello.class);
 
     // EDIT ME! Set SDK_KEY to your Unlaunch SDK key.
