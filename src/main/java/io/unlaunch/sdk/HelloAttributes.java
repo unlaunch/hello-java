@@ -11,7 +11,7 @@ import java.util.concurrent.TimeoutException;
 
 /**
  * An example showing how to pass attributes. It uses a sample feature flag.
- * For more information on Attributes, see: https://docs.unlaunch.io/docs/managingflags/attributes
+ * For more information on Attributes, see: https://docs.unlaunch.io/docs/features/attributes
  */
 public class HelloAttributes {
     private static final String SDK_KEY = "prod-public-c1967ee6-f9f3-43c5-ae40-7f8ab6d725cd";
