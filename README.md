@@ -2,10 +2,10 @@
 
 > Hello Unlaunch, from Java!
 
-Unlaunch is a free feature flag service. Please visit [https://www.unlaunch.io/](https://www.unlaunch.io/) to sign up
+Unlaunch is a free feature flag service. Please visit [https://www.unlaunch.io](https://www.unlaunch.io) to sign up
  for a new account today!
  
- This is a **demo** project to describe how to use [Unlaunch Java SDK](https://docs.unlaunch.io/docs/sdks/java-sdk) in your application. It is a maven project.
+This is a **demo** project to describe how to use [Unlaunch Java SDK](https://github.com/unlaunch/java-sdk) in your application. It is a maven project.
 For more details, read our [Getting Started](https://docs.unlaunch.io/docs/getting-started) tutorial.
 
 # Build Procedure
