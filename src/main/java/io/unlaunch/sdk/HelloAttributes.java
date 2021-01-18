@@ -2,6 +2,8 @@ package io.unlaunch.sdk;
 
 import io.unlaunch.UnlaunchAttribute;
 import io.unlaunch.UnlaunchClient;
+import java.util.HashSet;
+import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -28,14 +30,24 @@ public class HelloAttributes {
         } catch (InterruptedException | TimeoutException e) {
             LOG.error("[DEMO] client wasn't ready " + e.getMessage());
         }
+        
 
+        Set<String> userSet = new HashSet<>();
+        userSet.add("1");
+        userSet.add("2");
+        
         // Get variation for random identity and attributes
         String variation = client.getVariation(
                 FEATURE_FLAG_KEY,
                 UUID.randomUUID().toString(),
                 // Pass the registered attribute as true which returns "true".
                 // Set this to false to get the "off" variation
-                UnlaunchAttribute.newBoolean("registered", true));
+                UnlaunchAttribute.newBoolean("registered", true),
+                UnlaunchAttribute.newString("device", "ABCS"),
+                UnlaunchAttribute.newNumber("age", 30),
+                UnlaunchAttribute.newDate("start_date", System.currentTimeMillis()),
+                UnlaunchAttribute.newDateTime("expiry_date", System.currentTimeMillis()),
+                UnlaunchAttribute.newSet("user_ids", userSet));
 
         // Print variation
         LOG.info("[DEMO] getVariation() returned {}", variation);
