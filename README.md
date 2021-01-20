@@ -1,12 +1,10 @@
 # hello-java
 
 > Hello Unlaunch, from Java!
-
-Unlaunch is a free feature flag service. Please visit [https://www.unlaunch.io](https://www.unlaunch.io) to sign up
- for a new account today!
  
-This is a **demo** project to describe how to use [Unlaunch Java SDK](https://github.com/unlaunch/java-sdk) in your application. It is a maven project.
-For more details, read our [Getting Started](https://docs.unlaunch.io/docs/getting-started) tutorial.
+This is a **demo** project showing how to integrate the [Unlaunch Java SDK](https://github.com/unlaunch/java-sdk) in Java applications. It is a Maven project. For more details, read our [Getting Started](https://docs.unlaunch.io/docs/getting-started) tutorial.
+
+Unlaunch is a free feature flag service. Please visit [https://www.unlaunch.io](https://www.unlaunch.io) to sign up for a new account today!
 
 # Build Procedure
 1. Download code. Edit Hello.java class set your Unlaunch SDK_KEY and FEATURE_FLAG_KEY you want to evaluate as: 
